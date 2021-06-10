@@ -24,7 +24,6 @@ function getPizzaOrder() {
   // to pizza.cost
   // YOUR CODE HERE
   pizza.crust = crust
-
    if (crust.toLowerCase().trim() === 'thick') {
     pizza.cost += thickCrustUpcharge
   }
@@ -38,16 +37,18 @@ function getPizzaOrder() {
   // YOUR CODE HERE
 
   // console.log(toppings)
-  var toppingsSplit = toppings.split(",");
-  var numberOfToppings = parseInt(toppingsSplit, 10);
-
-
-  if (toppings === "") {
-    pizza.toppings = []
+  
+  if (toppings === '') {
+    pizza.toppings = [];
+  } else {
+    var toppingsSplit = toppings.split(",");
+    var toppingCharges = (toppingsFee * toppingsSplit.length);
+    pizza.cost += toppingCharges
   }
 
- 
- 
+
+
+  
 
 
   var extraCheese = confirm("Would you like extra cheese?")
