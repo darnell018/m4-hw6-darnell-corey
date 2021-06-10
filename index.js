@@ -42,6 +42,7 @@ function getPizzaOrder() {
     pizza.toppings = [];
   } else {
     var toppingsSplit = toppings.split(",");
+    pizza.toppings = toppingsSplit;
     var toppingCharges = (toppingsFee * toppingsSplit.length);
     pizza.cost += toppingCharges
   }
