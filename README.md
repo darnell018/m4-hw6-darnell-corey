@@ -1,7 +1,12 @@
 # m4-hw6-darnell-corey
+This project was createed from starter files to complete a JS assignment for a University of Florida Course.
+
+## Issues
+
+I had several issues. Understanding the basics and what to do was the foundation of all my problems, I have a little more of an understadning now, but it will take some more practice.
 
 
-## Resources
+### Resources
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
